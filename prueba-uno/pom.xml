@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>sebastian.ortiz</groupId>
 	<artifactId>prueba-uno</artifactId>
@@ -8,22 +10,22 @@
 	<name>AVI :: REST Service :: pruebaUno</name>
 
 	<properties>
-				<jboss.fuse.bom.version>6.2.1.redhat-216</jboss.fuse.bom.version>
-				<maven.build.timestamp.format>yyyy.MM.dd.HHmm</maven.build.timestamp.format>
+		<jboss.fuse.bom.version>6.2.1.redhat-216</jboss.fuse.bom.version>
+		<maven.build.timestamp.format>yyyy.MM.dd.HHmm</maven.build.timestamp.format>
 		<cxf-version>3.0.2</cxf-version>
 		<version.maven-bundle-plugin>2.3.7</version.maven-bundle-plugin>
 		<maven-resources-plugin-version>2.6</maven-resources-plugin-version>
-				<fabric.version>1.2.0.redhat-621216</fabric.version>
-				<timestamp>${maven.build.timestamp}</timestamp>
+		<fabric.version>1.2.0.redhat-621216</fabric.version>
+		<timestamp>${maven.build.timestamp}</timestamp>
 		<build-helper-maven-plugin-version>1.9.1</build-helper-maven-plugin-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<skipTests>true</skipTests>
 		<version.maven-surefire-plugin>2.15</version.maven-surefire-plugin>
-				
+
 		<maven.compiler.source>1.7</maven.compiler.source>
-		
+
 		<maven.compiler.target>1.7</maven.compiler.target>
-			</properties>
+	</properties>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
