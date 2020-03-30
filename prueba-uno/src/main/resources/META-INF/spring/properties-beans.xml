@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:osgix="http://www.springframework.org/schema/osgi-compendium"
+	xsi:schemaLocation=" 
+            http://www.springframework.org/schema/osgi-compendium http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium.xsd 
+            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd 
+            http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+	<osgix:cm-properties id="props" persistent-id="prueba.sebastian" />
+	<osgix:cm-properties id="amq-props" persistent-id="amq" />
+	<osgix:cm-properties id="mail-props" persistent-id="mail" />
+
+	<bean id="propertyPlaceholderConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="propertiesArray">
+			<list>
+				<ref bean="props" />
+				<ref bean="amq-props" />
+				<ref bean="mail-props" />
+			</list>
+		</property>
+	</bean>
+</beans>
